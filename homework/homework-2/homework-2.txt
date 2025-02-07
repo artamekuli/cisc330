@@ -1,0 +1,28 @@
+Arta Mekuli
+CISC 3300 SP25
+Homework 2
+
+1. An element is uniquely identified by its id attribute. Elements are grouped together by the class attribute. Both are used to style elements. Class can be applied to multiple elements, while id can only be applied to one.
+
+2. A CSS rule contains two parts which are a selector and a declaration.
+
+3. CSS rules cascade by applying styles in order of importance: inline styles are first, then internal styles, and lastly external styles.
+
+4. Block: Displays an element as a block element (like <p>). Starts a new line and takes the whole width.
+Inline: Displays an element as an inline element (like <span>). Any height and width properties will have no effect.
+Inline-block: Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values.
+
+5. Border is the edge around an element.
+Padding is the space between the element's content and its border
+Margin is the space outside the border.
+
+6. Let’s improve our fake business webpage from the first homework:
+a. Make a full width header div with a centered row of links and a border. The links
+can route to ‘#’. Give the header a background color and the links a foreground
+color.
+b. Create a logo with a fancy font from google fonts and some color. And set a
+google font for the text of the rest of your webpage.
+c. Every item on the page should have adequate margin/padding.
+d. Try to think about the usability principles we have discussed in class; try to make
+the design choices increase the usability of the page.
+
