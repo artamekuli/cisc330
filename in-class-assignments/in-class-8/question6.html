@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Data Type Demonstration</title>
+    <title>JavaScript Demonstration</title>
 </head>
 <body>
 <h1>Open the Console to See the Output</h1>
 <script>
-    // 1. Adding a string and a number
+    // 1. Adding a string and a number ??
     let str = "The number is ";
     let num = 10;
     let result1 = str + num;
     console.log("1. String + Number Output:", result1);
     console.log("Explanation: When a string is added to a number using the + operator, the number is converted into a string and concatenated.");
 
-    // 2. Using Number() function on boolean values
+    // 2. Using Number() function. boolean values?
     let numTrue = Number(true);
     let numFalse = Number(false);
     console.log("2. Number(true) Output:", numTrue);
     console.log("2. Number(false) Output:", numFalse);
-    console.log("Explanation: The Number() function converts true to 1 and false to 0 because these are their equivalent numerical representations in JavaScript.");
+    console.log("Explanation: The Number() function converts true to 1 and false to 0 because they are equivalent in JavaScript.");
 
-    // 3. Using Boolean() function on different values
+    // 3. Using the same Boolean() function on different values
     let bool1 = Boolean(1);
     let bool0 = Boolean(0);
     let boolStringZero = Boolean("0");
     console.log("3. Boolean(1) Output:", bool1);
     console.log("3. Boolean(0) Output:", bool0);
     console.log("3. Boolean(\"0\") Output:", boolStringZero);
-    console.log("Explanation: Boolean(1) is true because 1 is a truthy value. Boolean(0) is false because 0 is falsy. Boolean('0') is true because non-empty strings are always truthy in JavaScript.");
+    console.log("Explanation: Boolean(1) is true because 1 is a truth value. Boolean(0) is false because 0 is false value. However, Boolean('0') is true because non-empty strings are always true in JavaScript.");
 </script>
 </body>
 </html>
