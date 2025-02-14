@@ -1,0 +1,16 @@
+Arta Mekuli
+CISC 3300 S25
+Homework 3
+
+1. Compare and contrast Flexbox and CSS grid, how are they alike and how are they different?
+Flexbox is a one-dimensional layout system that uses rows or columns. It's ideal for aligning items in a row or column dynamically. CSS Grid is a two-dimensional layout system, meaning it can control both rows and columns simultaneously. Both are used for layout and positioning elements.
+
+
+2. What’s responsive design in web development and how do we implement it?
+Responsive design ensures web pages look good on all devices. It adapts layouts dynamically based on screen size. It does this through Flexbox layouts.
+
+3. Create a HTML file with a flex container and three flex items. Give the flex items a color and width/height of 100px. For screens <500px wide have the items flow vertically and >= 500px flow horizontally.
+4. Create a form with bootstrap, should have a few input elements, labels, and a submit button.
+5. You are the web designer for the Computer Science Department at Fordham. You have been asked to design this mock up for the CS homepage.
+https://www.fordham.edu/undergraduate-admission/majors-and-minors/computer-scienc e/
+a. Try to get as close as possible to the mock up, with colors and the font(Raleway), etc. It does not need to be pixel perfect. The image can be accessed here: https://www.fordham.edu/media/review/content-assets/migrated/images/iStock_0 00021097427Medium.jpg
