@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In-Class #10</title>
+</head>
+<body>
+<div id="thing" onclick="htmlDOMReact()">
+    Initial Text
+</div>
+<script>
+    function htmlDOMReact() {
+        const itemChange = document.getElementById('thing');
+        itemChange.textContent = 'added text!'
+        itemChange.setAttribute('style', 'background: yellow')
+    }
+</script>
+</body>
+</html>
