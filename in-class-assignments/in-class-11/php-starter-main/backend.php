@@ -1,16 +1,16 @@
 <?php
+header('Content-Type: application/json');
 
-// Tryna debug
+// Debugging
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-//Message Display in Console
-$data = [
-    "status" => "success",
-    "message" => "Data fetched successfully from MAMP",
-    "items" => ["item1", "item2", "item3"]
+// Sample response data
+$response = [
+    "user1" => ["name" => "John"],
+    "user2" => ["name" => "Jane"],
+    "user3" => ["name" => "Bob"]
 ];
 
-// Output JSON response
-echo json_encode($data);
+echo json_encode($response);
 ?>

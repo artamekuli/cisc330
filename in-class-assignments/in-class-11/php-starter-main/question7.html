@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> In Class #11: AJAX with PHP Backend</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h2>Get Data from Backend</h2>
+<button id="ajax-get">Fetch Data</button>
+<div id="cats-container"></div>
+
+<script>
+    $(document).ready(function () {
+        $('#ajax-get').on('click', function () {
+            $.ajax({
+                url: "backend.php",
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                    // Log the received data for debugging
+                    console.log(data);
+
+                    // Iterate over the data object using $.each()
+                    $.each(data, function (key, value) {
+                        console.log(value);  // Log each value
+
+                        // Append each 'name' to the #cats-container div
+                        $('#cats-container').append(`
+                            <div class="user">${value['name']}</div>
+                        `);
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error:", error);
+                    $("#cats-container").html("<p style='color: red;'>Error fetching data.</p>");
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
