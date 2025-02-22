@@ -1,0 +1,36 @@
+Arta Mekuli
+CISC 3300 S25
+Homework 4
+
+1. How does an interpreted programming language differ from a compiled language?
+Interpreted languages execute code line by line during runtime, which requires an interpreter to read and execute the code. This makes them flexible but slower. Meanwhile, compiled languages require a compile step. This is where a compiler translates the program into machine code. This can result in faster performance but it will need a compilation step.
+
+2. Contrast dynamically typed programming languages with statically typed ones. And contrast strongly typed programming languages with weakly typed ones.
+Dynamically typed languages determine variable types at runtime, which links the type to the value. Statically typed languages perform this at compile time and link the type to the variable. Strongly typed languages will enforce stricter type rules. Weakly typed languages pay attention to the various data types being used, but in some cases, will convert data between types.
+
+3. What is the difference between var, let, and const when declaring variables in JS?
+var is the classic method for declaring variables and allows redeclaration. let is block-scoped and cannot be redeclared in the same scope and const is also block-scoped but cannot be reassigned.
+
+4. What are anonymous functions? Higher order functions? Callback functions? First class functions?
+Anonymous functions are used as callbacks and have no name. Higher-order functions return functions or accept other functions as arguments. First-class functions can be returned from other functions, assigned to variables, or passed as arguments. Callback functions are passed to other functions for later execution.
+
+5. Define objects in JavaScript.
+A collection of key-value pairs that represent an object's properties makes up an object. Additionally, objects can have methods, which are functions.
+
+---------------------------
+
+6. Loop through the cats array variable found here:
+https://github.com/cisc3300/SP25-lecture-code/blob/main/2-13-lecture/cats.js
+a. if the cats adoption status is available add that cat’s name to a result array
+b. create a new sentence about your newly adopted cats from your result array via the join array function.
+
+7. Create a variable that sets a value via a ternary operator. Use Math.random() * 10, which will output a random number from 1 to 10, to set the variable’s value as a string of “greater than five!” if the output from Math.random() * 10 is greater than 5, and “less than five!” if the output is less than 5.
+
+8. Loop through the values of the cat object variable found here:
+https://github.com/cisc3300/SP25-lecture-code/blob/main/2-13-lecture/cats.js. Console.log the value of each property in the loop.
+
+9. Write two if statements, pick the correct comparison operator to have the first if statement equate an integer of 1 and a string of ‘1’ as true. And pick the correct comparison operator to have the second equate an integer of 1 and a string of ‘1’ as false.
+10. Using the map function create a new array via the cats array used in question 6. Pass the map function a callback function that accepts each element of the array as a parameter. Return the value of the name property of each object in the cats array concatenated with the string “ is cute!”. The output should be an array of “Charlie is cute!”, “Lily is cute!”, etc.
+
+
+Include questions 6-10 in a single JavaScript file or HTML file via a script tag.
