@@ -1,0 +1,51 @@
+1. What is the DOM? What is meant by the DOM tree?
+The Document Object Model (DOM) is a representation of a webpage in which nodes stand in for the various elements.
+This makes it possible for scripts to interact with the page and change its content, structure, or style.
+With nested elements showing up as child nodes in the tree, the model takes on a tree structure.
+
+
+2. What is an XSS attack? How do they work? How can you guard against them?
+A Cross-Site Scripting (XSS) attack occurs when a malicious user exploits a page by inserting unwanted code that eventually becomes HTML using innerHTML.
+After that, this code could be executed for various users and used against them. Limiting the amount of user input that is converted to HTML is the best defense against this.
+
+3. What is an event in JavaScript? What kind of events can you respond to with code?
+Events are actions taken by elements as a result of user interactions with the webpage.
+UI, Keyboard, Mouse, Focus, Form, and Mutation are the six categories of events to which a response is possible.
+When a user interacts with the browser's user interface, UI events take place. Examples of UI events are scroll, load, and unload.
+When a key is pressed or released, for example, or when the user interacts with the keyboard, keyboard events take place.
+When a user clicks or double-clicks with a mouse, trackpad, or touch screen, mouse interactions take place.
+Focus events, such as focus or blur, happen when an element becomes or becomes less focused.
+Form events, such as submit and input, happen when a user uses a form. When the DOM structure changes, mutation events take place.
+
+4. How does a DOM eventListener work? What are the parameters it is expecting?
+DOM eventListeners listen for an event by name, once the event happens, a function is called to react to the event.
+The name of the event to be listened for is the parameter that event listeners use. A function that automatically passes the event is then called.
+The function describes what should occur after the event takes place.
+
+
+5. What is jQuery? Why use it? How do we load jQuery onto a page?
+A JavaScript library called jQuery simplifies JavaScript programming by storing routine tasks as methods.
+A Content Delivery Network (CDN) or a link to the JavaScript file via the src attribute in a script element are used to load jQuery onto a page.
+
+
+6. What is AJAX? JSON? The HTTP method types and what they do?
+Asynchronous JavaScript and XML, or AJAX, enables asynchronous page updates without requiring a page reload.
+While the request is being processed, this enables a portion of the page to update without interfering with the operation of the remainder of the script.
+JavaScript object notation, or JSON, accepts text data in attribute-value pair object format. Get, post, put, patch, and delete are the different types of HTTP methods.
+To retrieve data, use get. Post is used to create new resources, modify existing ones, or add new information to a specified source.
+Like find and replace, put replaces every instance of a target resource with the request.
+
+7. Write some data in the JSON format. You can use this site https://jsonformatter.org/ to check if it’s in the right format, making use of the “validate” button.
+{
+ "job": {
+    "title": "Student Worker",
+    "workplace": "Fordham Law Clinic",
+    "hourly_wage": 16
+  }
+}
+
+8. Create a webpage that contains an unordered list element which contains several list item elements. If a list item is clicked, change the color of it. Each list item should have a different color.
+9. Create a webpage that contains a button. Write jQuery code so that when the button is clicked an HTTP GET request is sent to a PHP backend. From the PHP backend(reference the php-project code found here:
+https://github.com/cisc3300/SP25-lecture-code/tree/main/2-20-lecture) return a json encoded associative array of data pertaining to your fake business. Make sure that it has at least a name and a price. Use the response returned on the frontend to create a div element for each piece of data, show the name and price of each item and give the elements some style.
+10. Create a webpage that contains a form element with some input elements. Write jQuery code so that when the form is submitted an HTTP POST request is sent to a PHP backend. From the PHP backend(reference the php-project code found here:
+https://github.com/cisc3300/SP25-lecture-code/tree/main/2-20-lecture) return an associative array with data for a success message that is JSON encoded. Use the response to create an HTML element that contains the message data, give it some proper styling.
