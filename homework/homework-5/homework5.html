@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework #5: PHP Backend, Form and List </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        li {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .product {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            background-color: lightgray;
+        }
+        .success-message {
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>List of Items in Shop</h2>
+<ul id="colorList">
+    <li data-color="red">Item #1: Gaming Laptop</li>
+    <li data-color="blue">Item #2: Phone</li>
+    <li data-color="green">Item #3: Tablet</li>
+</ul>
+
+<h2>Technology Products Here</h2>
+<button id="getData">Click here to see available Products</button>
+<div id="productList"></div>
+
+<h2>Submit Form</h2>
+<form id="myForm">
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <button type="submit">Submit</button>
+</form>
+<div id="responseMessage"></div>
+
+<script>
+    $(document).ready(function() {
+        $("#colorList li").click(function() {
+                let newColor = $(this).attr("data-color");
+                $(this).css("color", newColor);
+        });
+
+        $("#getData").click(function() {
+            $.ajax({
+                url: "http://localhost:8888/index.php",
+                type: "GET",
+                data: { action: "getProducts" },
+                success: function(response) {
+                    $("#productList").empty();
+                    response.forEach(product => {
+                        $("#productList").append(
+                            `<div class='product'><strong>${product.name}</strong><br>Price: $${product.price}</div>`
+                        );
+                    });
+                },
+                error: function() {
+                    alert("Error getting product information.");
+                }
+            });
+        });
+
+        $("#myForm").submit(function(event) {
+            event.preventDefault();
+
+            $.ajax({
+                url: "http://localhost:8888/index.php",
+                type: "POST",
+                data: $("#myForm").serialize() + "&action=submitForm",
+                success: function(response) {
+                    $("#responseMessage").html(
+                        `<p class='success-message'>${response.message}</p>`
+                    );
+                },
+                error: function() {
+                    alert("Error.Unable to Submit Form.");
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
