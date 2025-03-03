@@ -15,6 +15,7 @@
       <path value="$PROJECT_DIR$/in-class-assignments/in-class-10/php-starter-main" />
     </include_path>
   </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>
