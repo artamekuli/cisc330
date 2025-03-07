@@ -1,0 +1,32 @@
+Arta Mekuli
+CISC 3300 S25
+Homework 6
+
+1. Define hoisting and closures in JS.
+Hoisting is when variables and functions within an execution context are pushed to the top so that they are created before being executed. The ability of functions to recall variables and functions from external scopes is referred to as closure. They can "look up" at outer scopes, but they can't "look down" into child functions.
+
+2. What is PHP? What do server side languages do in web development?
+PHP, also known as PHP Hypertext Processor, is a server-side scripting language that can communicate with databases and servers and process user input and requests.
+
+3. What are some examples of how the PHP and JavaScript programming languages are alike and how they differ?
+PHP is procedural, meaning it runs linearly. Java script prioritizes functions, allowing for closures and high-order functions. PHP is class-based OOP, while Java scripts use prototype OOP. Both have variables that are weakly and dynamically typed.
+
+4. Why pick PHP over another server side scripting language like Python or Node?
+PHP is a popular tool for web development and is relatively easy to learn. As a result, it is easy to use and has a lot of documentation, including discussion boards and tutorials. However, PHP's execution speed is one of the disadvantages of using it. The benefits though exceed some of the disadvantages of both Python and Node.js, such as Python deployment issues and Node.js callback hell.
+
+5. Compare and contrast echo and var_dump.
+Both are used to output values. Echo will show a specified message. The stored value is then shown if the message contains a variable. Var_dump returns the value, variable type, and structure after receiving a variable name.
+
+-------------
+6. Create a new PHP project, in the index.php file create:
+a. An associative array with keys and values.
+b. Loop through the array and echo out a string that contains each key and value.
+
+7. Add to question 6:
+a. Create a function that has:
+i. a set return type
+ii. an optional parameter
+iii. a typed parameter
+iv. and call your function with values that have the correct data types
+
+8. Create another PHP project that includes a “resources” directory. In the resources directory create an HTML file that has elements to show an image, also place an image in the resources directory. When the domain is accessed in a browser(localhost), return the HTML page with the working image.
