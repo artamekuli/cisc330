@@ -1,20 +1,22 @@
 <?php
 
-$array = [
-    'key1' => 'value1',
-    'key2' => 'value2',
-    'key3' => 'value3',
+$data = [
+    'fruit' => 'Apple',
+    'color' => 'Blue',
+    'animal' => 'Tiger',
 ];
 
-foreach ($array as $key => $value) {
-    echo "$key: $value<br>";
+foreach ($data as $category => $item) {
+    echo "$category: $item<br>";
 }
 
-function greet(string $name, string $greeting = "Hello"): string {
-    return "$greeting, $name!";
+function introduce(string $name, string $message = "Welcome"): string {
+    return "$message, $name!";
 }
 
-echo greet("Jasmine") . "<br>";
-echo greet("Aladdin", "Good morning") . "<br>";
+echo introduce("Jasmine") . "<br>";
+echo introduce("Aladdin", "Good evening") . "<br>";
+
+?>
 
 
